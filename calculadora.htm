@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html><html><head>
+<!DOCTYPE html><html><head>
 <title>Ejemplo</title><meta charset="utf-8">
 <script type="text/javascript">
 
@@ -20,6 +20,11 @@ function inverso() {
   var num = document.getElementById("n1");
   num.value = 1/num.value;
 }
+
+function sqrt() {
+  var num = document.getElementById("n1");
+  num.value = Math.sqrt(num.value);
+}
 </script>
 </head>
 <body>
@@ -29,6 +34,6 @@ function inverso() {
   <button onclick="cuadrado()"> x<sup>2</sup> </button>
   <button onclick="cubo()"> x<sup>3</sup> </button>
   <button onclick="inverso()"> 1/x </button>
-
+  <button onclick="sqrt()"> sqrt(x) </button>
 </body>
 </html>
